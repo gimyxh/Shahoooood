@@ -1,0 +1,24 @@
+<div class="marriage-contract">
+    <h1>عقد قران</h1>
+    <p>عبدالرحمن & شهد</p>
+    
+    <div class="signatures">
+        <div class="groom-sig">
+            <p>توقيع العريس</p>
+            <span class="handwriting">Abdulrahman</span>
+        </div>
+        <div class="bride-sig">
+            <p>توقيع العروس</p>
+            <span class="handwriting">Shahd</span>
+        </div>
+    </div>
+</div>
+
+<style>
+    .handwriting {
+        font-family: 'Dancing Script', cursive; /* خط يشبه اليد */
+        font-size: 2rem;
+        color: #2c3e50;
+        border-bottom: 1px solid #333;
+    }
+</style>
