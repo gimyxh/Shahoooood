@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دعوة عقد قران | عبدالرحمن وشهد</title>
+    <title>وعد عقد قران | عبدالرحمن وشهد</title>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Reem+Kufi:wght@400;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -35,43 +35,24 @@
             text-align: center;
             box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 0 20px rgba(212, 175, 55, 0.1);
             position: relative;
-            overflow: hidden;
-        }
-
-        .card::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; right: 0; height: 5px;
-            background: var(--gold);
         }
 
         .bismillah {
             font-family: 'Reem Kufi', sans-serif;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: var(--gold);
-            margin-bottom: 25px;
-            letter-spacing: 2px;
-        }
-
-        .verse {
-            font-style: italic;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #a0aec0;
-            margin-bottom: 30px;
-            padding: 0 15px;
+            margin-bottom: 20px;
         }
 
         .title {
             font-family: 'Reem Kufi', sans-serif;
-            font-size: 2.2rem;
-            font-weight: bold;
+            font-size: 2rem;
             color: #fff;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
         }
 
         .names-box {
-            margin: 35px 0;
+            margin: 20px 0;
             padding: 20px;
             border-top: 1px solid var(--glass);
             border-bottom: 1px solid var(--glass);
@@ -89,38 +70,38 @@
             font-family: 'Dancing Script', cursive;
             font-size: 2rem;
             color: #fff;
-            margin: 10px 0;
+            margin: 5px 0;
         }
 
-        .date-location {
-            font-size: 1.3rem;
+        .message {
+            font-size: 1.2rem;
+            line-height: 1.8;
             color: #cbd5e0;
-            line-height: 1.6;
+            margin: 30px 0;
+        }
+
+        .status-box {
+            background: rgba(212, 175, 55, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            font-family: monospace;
+            color: var(--gold);
+            font-size: 0.9rem;
+            margin: 20px 0;
+            border: 1px dashed var(--gold);
         }
 
         .signature-container {
             display: flex;
             justify-content: space-around;
-            margin-top: 50px;
-        }
-
-        .sig-item {
-            text-align: center;
+            margin-top: 40px;
         }
 
         .sig-name {
             font-family: 'Dancing Script', cursive;
             font-size: 1.8rem;
             color: var(--gold);
-            margin-bottom: -10px;
             display: block;
-        }
-
-        .sig-line {
-            width: 100px;
-            height: 1px;
-            background: #4a5568;
-            margin: 15px auto 5px;
         }
 
         .sig-label {
@@ -128,24 +109,15 @@
             color: #718096;
         }
 
-        .footer {
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: var(--gold);
-            opacity: 0.7;
-        }
-
-        /* حركات بسيطة */
         .heart {
             color: #e53e3e;
-            display: inline-block;
             animation: heartbeat 1.5s infinite;
+            display: inline-block;
         }
 
         @keyframes heartbeat {
-            0% { transform: scale(1); }
+            0%, 100% { transform: scale(1); }
             50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
         }
     </style>
 </head>
@@ -153,11 +125,7 @@
     <div class="card">
         <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
         
-        <div class="verse">
-            "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"
-        </div>
-
-        <div class="title">دعوة عقد قران</div>
+        <div class="title">مشروع حياة</div>
 
         <div class="names-box">
             <span class="name">عبدالرحمن</span>
@@ -165,27 +133,31 @@
             <span class="name">شهد</span>
         </div>
 
-        <div class="date-location">
-            يتشرفون بدعوتكم لمشاركتهم فرحة العمر <br>
-            يوم السبت <span class="heart">❤</span> ٢ مايو ٢٠٢٦ م
+        <div class="message">
+            "نحن لا نبني بيتاً فقط، بل نبني مستقبلاً آمناً بالحب والكفاح.. <br>
+            سنلتقي هنا حين يكتمل الحلم ويحين الموعد."
+        </div>
+
+        <div class="status-box">
+            $ git status: Building_Future... <br>
+            $ progress: ▓▓▓▓▓▓░░░░ 60% <br>
+            $ message: "قريباً بإذن الله"
         </div>
 
         <div class="signature-container">
             <div class="sig-item">
                 <span class="sig-name">Shahd</span>
-                <div class="sig-line"></div>
-                <span class="sig-label">توقيع العروس</span>
+                <span class="sig-label">العروس المنتظرة</span>
             </div>
             <div class="sig-item">
                 <span class="sig-name">Abdulrahman</span>
-                <div class="sig-line"></div>
-                <span class="sig-label">توقيع العريس</span>
+                <span class="sig-label">العريس المكافح</span>
             </div>
         </div>
 
-        <div class="footer">
-            دامت دياركم بالأفراح عامرة
-        </div>
+        <p style="margin-top: 40px; color: #718096; font-size: 0.8rem;">
+            دعواتكم لنا بتمام الخطوات <span class="heart">❤</span>
+        </p>
     </div>
 </body>
 </html>
