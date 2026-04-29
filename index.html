@@ -1,24 +1,191 @@
-<div class="marriage-contract">
-    <h1>عقد قران</h1>
-    <p>عبدالرحمن & شهد</p>
-    
-    <div class="signatures">
-        <div class="groom-sig">
-            <p>توقيع العريس</p>
-            <span class="handwriting">Abdulrahman</span>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة عقد قران | عبدالرحمن وشهد</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Reem+Kufi:wght@400;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --dark: #0f141a;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            background-color: var(--dark);
+            background-image: radial-gradient(circle at center, #1a202c 0%, #0f141a 100%);
+            color: #e1e1e1;
+            font-family: 'Amiri', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #161b22, #0d1117);
+            border: 1px solid var(--gold);
+            border-radius: 20px;
+            padding: 40px 20px;
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 0 20px rgba(212, 175, 55, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 5px;
+            background: var(--gold);
+        }
+
+        .bismillah {
+            font-family: 'Reem Kufi', sans-serif;
+            font-size: 1.6rem;
+            color: var(--gold);
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+        }
+
+        .verse {
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #a0aec0;
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+
+        .title {
+            font-family: 'Reem Kufi', sans-serif;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .names-box {
+            margin: 35px 0;
+            padding: 20px;
+            border-top: 1px solid var(--glass);
+            border-bottom: 1px solid var(--glass);
+        }
+
+        .name {
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: var(--gold);
+            display: block;
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .and {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: #fff;
+            margin: 10px 0;
+        }
+
+        .date-location {
+            font-size: 1.3rem;
+            color: #cbd5e0;
+            line-height: 1.6;
+        }
+
+        .signature-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .sig-item {
+            text-align: center;
+        }
+
+        .sig-name {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: -10px;
+            display: block;
+        }
+
+        .sig-line {
+            width: 100px;
+            height: 1px;
+            background: #4a5568;
+            margin: 15px auto 5px;
+        }
+
+        .sig-label {
+            font-size: 0.9rem;
+            color: #718096;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: var(--gold);
+            opacity: 0.7;
+        }
+
+        /* حركات بسيطة */
+        .heart {
+            color: #e53e3e;
+            display: inline-block;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+        
+        <div class="verse">
+            "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"
         </div>
-        <div class="bride-sig">
-            <p>توقيع العروس</p>
-            <span class="handwriting">Shahd</span>
+
+        <div class="title">دعوة عقد قران</div>
+
+        <div class="names-box">
+            <span class="name">عبدالرحمن</span>
+            <div class="and">&</div>
+            <span class="name">شهد</span>
+        </div>
+
+        <div class="date-location">
+            يتشرفون بدعوتكم لمشاركتهم فرحة العمر <br>
+            يوم السبت <span class="heart">❤</span> ٢ مايو ٢٠٢٦ م
+        </div>
+
+        <div class="signature-container">
+            <div class="sig-item">
+                <span class="sig-name">Shahd</span>
+                <div class="sig-line"></div>
+                <span class="sig-label">توقيع العروس</span>
+            </div>
+            <div class="sig-item">
+                <span class="sig-name">Abdulrahman</span>
+                <div class="sig-line"></div>
+                <span class="sig-label">توقيع العريس</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            دامت دياركم بالأفراح عامرة
         </div>
     </div>
-</div>
-
-<style>
-    .handwriting {
-        font-family: 'Dancing Script', cursive; /* خط يشبه اليد */
-        font-size: 2rem;
-        color: #2c3e50;
-        border-bottom: 1px solid #333;
-    }
-</style>
+</body>
+</html>
